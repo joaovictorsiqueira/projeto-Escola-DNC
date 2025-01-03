@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Escola DNC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!--MENU SUPERIOR-->
+    <div class="menu-superior">
+        <a target="_blank" href="https://www.escoladnc.com.br"> <img class="logo" src="./imagens/logo.svg" alt="logo dnc"> </a>
+
+        <h1 class="titulo-home">Dê os primeiros passos da <br> 
+            sua carreira em Tecnologia</h1>
+
+        <p class="texto-home">Inscreva-se no curso gratuito de Introdução à <br> 
+            Tecnologia da DNC School e aprenda os principais <br> 
+            fundamentos para construir experiências efetivas.</p>
+    </div>
+
+        <!--MENU INFORMATIVO-->
+    <div class="menu-informacao">
+        
+        <p class="texto-informativo"> <img class="icone" src="icones/certificado.svg" alt=""> Certificado de conclusão</p>
+        
+        <p class="texto-informativo"> <img class="icone" src="icones/relogio.svg" alt=""> 4 horas de conteúdo</p>
+        
+        <p class="texto-informativo"> <img class="icone" src="icones/camera.svg" alt=""> Aulas online gravadas</p>
+
+    </div>
+
+        <!--SEÇÃO VÍDEO-->
+    <div class="secao-video">
+        <iframe class="video" width="502" height="283" src="https://www.youtube.com/embed/ITxGkd9h4n4" title="DNC - A escola inovadora que forma profissionais de alta perfomance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <div >
+            <h1 class="titulo-video">
+                Aprenda com especialistas e <br>
+                 comece seu primeiro projeto
+            </h1> <br><br>
+    
+            <p class="texto-video">
+                Conheça o processo de desenvolvimento e entenda como utilizar<br>
+                os principais métodos e ferramentas da área para resolver<br>
+                problemas complexos. <br><br>
+    
+                Conquiste seu certificado e desenvolva um projeto prático para<br>
+                aplicar seus conhecimentos.
+            </p>
+        </div>
+       
+
+    </div>
+
+        <!--SEÇÃO CARROSSEL-->
+    <div class="carrossel">
+        
+        <h1 class="titulo-carrossel">Mais de 500 alunos já iniciaram seus estudos</h1>
+
+            <!--DIVISÃO DOS CARDS-->
+        <div class="cards">
+            <img id="seta-esquerda" class="seta" onclick="RolarParaEsquerda()" src="icones/seta-esquerda.svg" alt="">
+
+            <img id="samantha" class="card" src="cards/samantha.svg" alt="">
+            <img id="bruna" class="card" src="cards/bruna.svg" alt="">
+            <img id="leonardo" class="card" src="cards/leonardo.svg" alt="">            
+
+            <img id="seta-direita" class="seta" onclick="RolarParaDireita()" src="icones/seta-direita.svg" alt="">
+        </div>
+
+    </div>
+
+        <!--SEÇÃO FORMULÁRIO-->
+    <div id="formulario" class="formulario">
+        <h1 id="titulo-formulario" class="titulo-formulario">Comece agora mesmo e dê o próximo passo da sua carreira</h1>
+
+        <form action="https://api.sheetmonkey.io/form/6Y7c6Y53XqamCbL3GkQjHg" method="post">
+            <input type="text" placeholder="Nome" name="Name" required> <br>
+            <input type="email" placeholder="E-mail" name="Email" required> <br>
+            <input type="number" placeholder="Telefone" name="Phone"> <br>
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+            <button type="submit">Acesse a ementa grátis</button>
+        </form>
+
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
